@@ -1,0 +1,91 @@
+.news {
+  font-family: $font-family-1;
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+
+  &__block-title {
+    margin-bottom: 43px;
+    font-size: $font-size-5;
+  }
+
+  &__block {
+    margin-bottom: 30px;
+  }
+
+  &__image {
+    position: relative;
+    display: inline-block;
+    margin-right: 35px;
+  }
+
+  &__month {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: -17px;
+    background: $color-2;
+    color: $color-4;
+    font-size: $font-size-8;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+  }
+
+  &__day {
+    display: block;
+    position: absolute;
+    top: 52px;
+    left: -17px;
+    background: $color-3;
+    color: $color-5;
+    font-size: $font-size-9;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+  }
+
+  &__info {
+    display: inline-block;
+    vertical-align: top;
+    width: 390px;
+  }
+
+  &__title {
+    display: block;
+    margin: 4px 0 7px;
+    text-decoration: none;
+    color: $color-7;
+    font-size: $font-size-6;
+    transition: linear $time-1;
+  }
+
+  &__title:hover {
+    color: $color-2;
+  }
+
+  &__author, &__comments, &__description {
+    font-family: $font-family-3;
+    color: $color-6;
+    font-size: $font-size-1;
+  }
+
+  &__author, &__comments {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__comments {
+    margin-left: 8px;
+  }
+
+  &__author span, &__comments span {
+    color: $color-9;
+
+  }
+
+  &__description {
+    margin-top: 25px;
+    line-height: 20px;
+  }
+}

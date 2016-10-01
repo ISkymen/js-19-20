@@ -1,0 +1,40 @@
+.follow {
+  float: right;
+}
+
+.follow__link {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 12px 0 0 18px;
+  background-image: url(img/sprite.png);
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: linear $time-3;
+}
+
+.follow__link:hover {
+  filter: none;
+  opacity: 1;
+}
+
+.follow__facebook {
+  background-position: -64px 0px;
+}
+
+.follow__twitter {
+  background-position: -64px -16px;
+ }
+
+.follow__rss {
+  background-position: -64px -32px;
+}
+
+.follow__linkedin {
+  background-position: -32px -32px;
+}
+
+.follow__skype {
+  background-position: -48px -32px;
+}
+

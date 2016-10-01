@@ -1,0 +1,106 @@
+.advantage {
+  font-size: 0;
+  &__block {
+    display: inline-block;
+    width: 360px;
+    margin-right: 40px;
+    font-family: $font-family-1;
+    position: relative;
+  }
+
+  &__block:last-child {
+    margin-right: 0;
+  }
+
+  &__number {
+    color: $color-5;
+    opacity: 0.1;
+    font-size: $font-size-3;
+    display: inline-block;
+    user-select: none;
+    margin-right: 20px;
+  }
+
+  &__info {
+    display: inline-block;
+    vertical-align: top;
+    width: 237px;
+    position: relative;
+  }
+
+  &__info:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(img/sprite.png);
+    width: 32px;
+    height: 32px;
+    margin-top: 20px;
+    margin-left: 1px;
+  }
+
+  &__title {
+    font-size: $font-size-4;
+    margin: 66px 0 18px;
+    color: $color-5;
+  }
+
+  &__description {
+    font-family: $font-family-3;
+    font-size: $font-size-1;
+    line-height: 20px;
+    color: $color-6;
+    letter-spacing: -0.1px; // PP
+  }
+
+  &__link {
+    color: $color-5;
+    font-size: $font-size-1;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    transition: linear $time-1;
+
+    &:hover {
+      color: $color-2;
+    }
+
+    &:after {
+      content: "🡲";
+      margin-left: 5px;
+      color: $color-2;
+      transition: linear $time-1;
+    }
+
+    &:hover:after {
+      color: $color-5;
+      margin-left: 10px;
+    }
+  }
+
+
+
+}
+
+
+
+
+
+
+.block-1:after {
+  background-position: 0px 0px;
+}
+
+.block-2:after {
+  background-position: -32px 0px;
+}
+
+.block-3:after {
+  background-position: 0px -32px;
+  height: 26px;
+  margin-top: 23px;
+}
+
+

@@ -1,0 +1,62 @@
+.slick {
+  margin: 40px 0 52px;
+}
+
+.slick__title {
+  font-size: $font-size-11;
+  line-height: $font-size-11;
+  font-family: $font-family-1;
+  color: $color-4;
+  width: 200px;
+  text-transform: uppercase;
+
+}
+.slick__title span{
+  background: rgba($color-5, 0.8);
+  outline: 10px solid rgba($color-5, 0.8);
+  line-height: 60px;
+}
+.slick__title-bg {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+}
+
+.slick__title:first-line {
+  color: $color-3;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 17px;
+  left: 16px;
+  right: 0;
+  text-align: center;
+  list-style: none;
+
+  li {
+    display: inline-block;
+
+    button {
+      font-size: 0;
+      background: white;
+      height: 15px;
+      width: 15px;
+      border: 0;
+      margin-right: 15px;
+      position: relative;
+    }
+  }
+
+  li.slick-active button:after {
+    content: "";
+    display: block;
+    width: 9px;
+    height: 9px;
+    background: #001d1d;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+  }
+
+}

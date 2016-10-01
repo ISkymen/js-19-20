@@ -1,0 +1,18 @@
+<div class="advantage">
+    {% for key in advantage %}
+    <div class="advantage__block">
+        <div class="advantage__number">
+            {{ advantage[loop.index0][0] }}
+        </div>
+        <div class="advantage__info block-{{ loop.index }}">
+            <div class="advantage__title">
+                {{ advantage[loop.index0][1] }}
+            </div>
+            <div class="advantage__description">
+                {{ advantage[loop.index0][2] }}
+            </div>
+            <a href="" class="advantage__link">Read More</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>

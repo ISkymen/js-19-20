@@ -1,0 +1,74 @@
+.service {
+  padding: 42px 0 67px;
+
+  &__block-title {
+    margin-bottom: 52px;
+    font-family: $font-family-1;
+    color: $color-4;
+    font-size: $font-size-5;
+    font-weight: normal;
+    margin-left: 1px; // PP
+  }
+
+  &__block {
+    position: relative;
+    display: inline-block;
+    margin-right: 40px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__title {
+    font-family: $font-family-1;
+    color: $color-4;
+    font-size: $font-size-6;
+    text-align: center;
+    margin-top: 31px;
+    transition: linear $time-1;
+  }
+}
+
+.service__block:hover .service__title {
+  color: $color-3;
+}
+
+.service__image:after {
+  content: "+";
+  display: block;
+  background: $color-2;
+  color: $color-4;
+  font-size: $font-size-7; // font-size: 0;
+  line-height: 260px;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.service__block:hover .service__image:after {
+  opacity: 0.9;
+  transition: linear $time-1;
+}

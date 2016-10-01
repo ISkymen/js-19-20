@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu:500" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="top">
+        <a href="" class="logo">
+            <img src="images/logo.png" alt="">
+        </a>
+        {% include "tpl/follow.html" %}
+    </div>
+    <div class="pannel">
+        {% include "tpl/menu.html" %}
+        <form action="" class="search">
+            <input type="text" class="search__box" placeholder="Search...">
+            <input type="submit" class="search__button">
+        </form>
+    </div>
+    {% include "tpl/slider.html" %}
+    {% include "tpl/advantage.html" %}
+</div>
+<div class="row-1">
+    <div class="wrapper">
+        {% include "tpl/service.html" %}
+    </div>
+</div>
+<div class="row-2">
+    <div class="wrapper">
+        {% include "tpl/news.html" %}
+        {% include "tpl/accordion.html" %}
+    </div>
+</div>
+<div class="row-3">
+    <div class="wrapper">
+        {% include "tpl/partner.html" %}
+    </div>
+</div>
+<div class="row-4">
+    <div class="wrapper">
+        {% include "tpl/helplink.html" with {'helplink': socials} %}
+        {% include "tpl/helplink.html" with {'helplink': links} %}
+        {% include "tpl/helplink.html" with {'helplink': blogroll} %}
+        {% include "tpl/helplink.html" with {'helplink': about} %}
+    </div>
+</div>
+<div class="row-5">
+    <div class="wrapper">
+        {% include "tpl/footer.html" %}
+    </div>
+</div>
+</body>
+</html>

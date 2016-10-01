@@ -1,0 +1,9 @@
+<nav class="menu">
+    <ul>
+        {% for key in menu %}
+        <li class="menu__item">
+            <a href="{{ menu[loop.index0][1] }}" class="menu__link {% if loop.index == 1 %}active{% endif %}">{{ menu[loop.index0][0] }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
